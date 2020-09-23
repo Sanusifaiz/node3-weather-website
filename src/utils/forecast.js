@@ -14,6 +14,7 @@ const forecast = (latitude, longitude, callback) => {
             callback('Location not found!!, Please try another search', undefined)
         }  else {
             callback(undefined, 'The weather is ' + body.current.temperature +' degrees'+ ' but it feels like ' + body.current.feelslike + ' degrees' + ' in ' + body.location.region + ', ' + body.location.country)
+            callback(body.current.weather_icons[0])
         }
 
     })
