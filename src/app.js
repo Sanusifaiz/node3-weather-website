@@ -5,7 +5,6 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 
-
 // console.log(__dirname)
 // console.log(path.join(__dirname, '../public'))
 
@@ -78,15 +77,17 @@ app. get('/weather', (req, res) => {
       return res.send({ error })
     }
   
-       forecast(latitude, longitude, (error, forecastData) => {
+       forecast(latitude, longitude, (error, {forecastdata, forecasttime, forecasthumidity, forecastwind}) => {
          if (error) {
            return res.send({error})
          }
   
          res.send([{
         location: location,
-        forecast: forecastData
- 
+        forecast: forecastdata,
+        time: forecasttime,
+        humidity: forecasthumidity,
+        forecastwind: forecastwind
     }])
         // console.log(data.location)
         // console.log(forecastData)
