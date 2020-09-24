@@ -1,11 +1,12 @@
 body {
     color: #333333; 
     font-family: Arial;
-    max-width: 650px;
-    margin: 0 auto;
+    max-width: 65000000px;
+    margin: 0 0;
     padding: 0 16px;
+    background-color: lightblue;
 
-    display: flex;
+    display: flex ;
     flex-direction: column;
     min-height: 100vh;
 }
@@ -15,20 +16,38 @@ body {
 }
 
 footer {
-    color: #888888 ;
+    color: white ;
+    font-weight: bolder;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
-    padding: 16px 0;
+    padding: 5px 0;
+    background-color: limegreen;
+    margin-left: 0%;
 }
 
+a:link {
+    color: gray;
+    }
+    a:visited {
+    color: green;
+    }
+    a:hover {
+    color: purple;
+    }
+    a:active {
+    color: teal;
+    }
+
+
 header {
-    margin-top: 16px;
+    margin-top: 10px;
     margin-bottom: 48px;
 }
 
 h1 {
     font-size: 64px;
     margin-bottom: 16px ;
+    color: darkolivegreen;
 }
 
 header a {

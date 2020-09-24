@@ -17,6 +17,9 @@ weatherform.addEventListener('submit', (e) => {
 
     messageTwo.textContent = 'Loading...'
     messageOne.textContent = ''
+    messageThree.textContent = ''
+    messageFour.textContent = ''
+    messageFive.textContent = ''
 
     
 
